@@ -70,6 +70,6 @@ function gerarTabela() {
 
     //Anexa a imagem dos pilotos junto da tabela
     var imagemPiloto = document.createElement('img');
-    imagemPiloto.src = "piloto" + indPesquisa + ".jpg";
+    imagemPiloto.src = "./imagens/imagens-pilotos/piloto" + indPesquisa + ".png";
     outTabelaPilotos.appendChild(imagemPiloto);
 }
