@@ -64,21 +64,12 @@ function gerarTabela() {
             var celula = document.createElement('td');
             celula.textContent = identPiloto;
             linha.appendChild(celula);//Anexa a linha do corpo 
-
-            //Cria a célula do corpo com o número da corrida
-            var celula = document.createElement('td');
-            celula.textContent = (i + 1) + "º";
-            linha.appendChild(celula);
-
-            //Cria a célula do corpo com a pontuação
-            var celula = document.createElement('td');
-            celula.textContent = pontuacaoPorCorrida[i];
-            linha.appendChild(celula);
         } else {
             //Cria a célula vazia do corpo
             var celula = document.createElement('td');
             celula.textContent = " ";
             linha.appendChild(celula);//Anexa a linha do corpo 
+        }
 
             //Cria a célula do corpo com o número da corrida
             var celula = document.createElement('td');
@@ -89,8 +80,7 @@ function gerarTabela() {
             var celula = document.createElement('td');
             celula.textContent = pontuacaoPorCorrida[i];
             linha.appendChild(celula);
-        }
-
+            
         corpoTabela.appendChild(linha);
     }
 

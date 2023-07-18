@@ -93,7 +93,6 @@ function gerarTabela() {
         //Cria as linhas de corpo da tabela
         var linhaCorpo = document.createElement('tr')
 
-        //Define o cabeçalho da tabela
         var celulaCorpo = document.createElement('td');
         celulaCorpo.textContent = (i+1) + "º";
         linhaCorpo.appendChild(celulaCorpo);
