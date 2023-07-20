@@ -1,5 +1,3 @@
-var indPesquisa = -1;
-
 //Refêrencia ao html
 const outTabelaEquipes = document.getElementById("outTabelaEquipes");
 const sltEquipe = document.getElementById("sltEquipe");
@@ -19,9 +17,11 @@ function gerarTabela() {
         }
     } //Retorna a posição do 2º membro da equipe (O primeiro será encontrado subtraindo 1)
 
+    //Guarda a pontuação dos pilotos em cada corrida(Duas de cada vez)
     let vetPontuacaoPilotosPorCorrida= [];
     vetPontuacaoPilotosPorCorrida.push(vetCorrida1[indPesquisa], vetCorrida1[indPesquisa-1], vetCorrida2[indPesquisa], vetCorrida2[indPesquisa-1],vetCorrida3[indPesquisa], vetCorrida3[indPesquisa-1],vetCorrida4[indPesquisa], vetCorrida4[indPesquisa-1],vetCorrida5[indPesquisa], vetCorrida5[indPesquisa-1]);
 
+    //Guarda a pontuação de cada equipe por corrida
     let vetPontuacaoPorCorrida = [];
     for(let j = 0; j < vetPontuacaoPilotosPorCorrida.length; j+=2){
         let pontuacao;
@@ -30,54 +30,46 @@ function gerarTabela() {
     }
 
     // Cria o elemento tabela
-    var tabela = document.createElement('table');
+    const tabela = document.createElement('table');
 
     // Cria o cabeçalho e corpo da tabela
-    var cabecalhoTabela = document.createElement('thead');
-    var corpoTabela = document.createElement('tbody');
+    const cabecalhoTabela = document.createElement('thead');
+    const corpoTabela = document.createElement('tbody');
 
     //Cria as linhas do cabeçalho e do corpo da tabela
-    var linhaCabecalho = document.createElement('tr');
+    const linhaCabecalho = document.createElement('tr');
 
-    //Cria a primeira célula do cabeçalho e atribui a ela o texto piloto
-    var celulaCabecalho = document.createElement('th');
-    celulaCabecalho.textContent = "Equipe";
-    linhaCabecalho.appendChild(celulaCabecalho);//Anexa a linha cabeçalho
+    //Define o cabeçalho da tabela
+    const itensCabeçalho = ["Equipe","Corrida","Pontuação"];
+    for(let i=0;i<itensCabeçalho.length;i++){
+        const celulaCabecalho = document.createElement('th');//Cria a célula do cabeçalho
+        celulaCabecalho.textContent = itensCabeçalho[i];
+        linhaCabecalho.appendChild(celulaCabecalho);//Anexa a linha cabeçalho
+    }
 
-     //Cria a primeira célula do cabeçalho e atribui a ela o texto piloto
-     var celulaCabecalho = document.createElement('th');
-     celulaCabecalho.textContent = "Corrida";
-     linhaCabecalho.appendChild(celulaCabecalho);//Anexa a linha cabeçalho
- 
-     //Cria a primeira célula do cabeçalho e atribui a ela o texto piloto
-     var celulaCabecalho = document.createElement('th');
-     celulaCabecalho.textContent = "Pontuação";
-     linhaCabecalho.appendChild(celulaCabecalho);//Anexa a linha cabeçalho
- 
-
-    // Percorre o vetor criando as demais células e anexando elas a cada linha
+    //Define o corpo da tabela
     for (i = 0; i < 5; i++) {
-        var linha = document.createElement('tr')
+        const linhaCorpo = document.createElement('tr');//Cria as linhas do corpo da tabela
         
         if(i == 0){
-            var celula = document.createElement('td');
-            celula.textContent = identEquipe;
-            linha.appendChild(celula);//Anexa a linha do corpo
+            const celulaEquipe = document.createElement('td');
+            celulaEquipe.textContent = identEquipe;
+            linhaCorpo.appendChild(celulaEquipe);//Anexa a linha do corpo
         }else{
-            var celula = document.createElement('td');
+            const celula = document.createElement('td');
             celula.textContent = " ";
-            linha.appendChild(celula);//Anexa a linha do corpo
+            linhaCorpo.appendChild(celula);//Anexa a linha do corpo
         }
 
-        var celula = document.createElement('td');
-        celula.textContent = (i+1) + "º";
-        linha.appendChild(celula);//Anexa a linha do corpo
+        const celulaCorrida = document.createElement('td');
+        celulaCorrida.textContent = (i+1) + "º";
+        linhaCorpo.appendChild(celulaCorrida);//Anexa a linha do corpo
 
-        var celula = document.createElement('td');
-        celula.textContent = vetPontuacaoPorCorrida[i];
-        linha.appendChild(celula);//Anexa a linha do corpo
+        const celulaPontuacao = document.createElement('td');
+        celulaPontuacao.textContent = vetPontuacaoPorCorrida[i];
+        linhaCorpo.appendChild(celulaPontuacao);//Anexa a linha do corpo
 
-        corpoTabela.appendChild(linha);
+        corpoTabela.appendChild(linhaCorpo);
     }
 
     //Anexa as linhas ao cabeçalho e ao corpo da tabela

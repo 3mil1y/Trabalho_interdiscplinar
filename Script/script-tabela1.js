@@ -1,5 +1,3 @@
-var indPesquisa = -1;
-
 //Refêrencia ao html
 const outTabelaPilotos = document.getElementById("outTabelaPilotos");
 const sltPiloto = document.getElementById("sltPiloto");
@@ -7,9 +5,9 @@ const sltPiloto = document.getElementById("sltPiloto");
 sltPiloto.addEventListener("change", gerarTabela)
 
 function gerarTabela() {
-  
-    //Esvazia o html para que uma nova tabela de pilotos seja inserida
-    outTabelaPilotos.textContent = " ";
+    //Nesse código não será necessária verificação, visto que as tabelas são geradas conforme algum elemento é escolhido e é impossível retornar ao primeiro elemento
+
+    outTabelaPilotos.textContent = " "; //Esvazia o html para que uma nova tabela de pilotos seja inserida
  
     //Pesquisa no vetor pilotos  o indice do piloto selecionado
     var identPiloto = sltPiloto.value;
@@ -20,8 +18,8 @@ function gerarTabela() {
     }
     
     //Armaneza a posição do piloto selecionado na corrida para que seja utilizada na tabela
-    var valoresTabela = [];
-    valoresTabela.push(vetCorrida1[indPesquisa], vetCorrida2[indPesquisa], vetCorrida3[indPesquisa], vetCorrida4[indPesquisa], vetCorrida5[indPesquisa]);
+    var vetPosicoesPiloto = [];
+    vetPosicoesPiloto.push(vetCorrida1[indPesquisa], vetCorrida2[indPesquisa], vetCorrida3[indPesquisa], vetCorrida4[indPesquisa], vetCorrida5[indPesquisa]);
 
     // Cria o elemento tabela
     var tabela = document.createElement('table');
@@ -53,7 +51,7 @@ function gerarTabela() {
 
         //Cria as células do corpo que informam a colocação do piloto em cada corrida
         var celula = document.createElement('td');
-        celula.textContent = valoresTabela[i] +"º colocação";
+        celula.textContent = vetPosicoesPiloto[i] +"º colocação";
         linha.appendChild(celula);
     }
 
