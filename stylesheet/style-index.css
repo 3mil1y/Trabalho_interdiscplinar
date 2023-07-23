@@ -11,47 +11,10 @@ body{
     font-family: 'Abel', sans-serif;
 }
 
-header{
-    background-color: red;
-    color:white;
-}
-
-.caixa{
-    position: relative;
-    margin: 0 auto;
-    height: 70px;
-}
-
-.titulo-principal{
-    position: relative;
-    padding-left: 300px;
-    top: 20px;
-}
-
-nav{
-    position: absolute;
-    top: 5px;
-    right: 10%;
-    
-}
-
-nav a{
-    text-decoration: none;
-    color: white;
-    font-size: 30px;
-    margin: 0 0 0 60px;
-}
-
-main{
-    background-color: #f6f8f7;
-    height: 800px;
-}
-
 footer{
     background-color: red;
     color:white;
     height: 100px;
-    
 }
 
 .titulo-copyright{

@@ -1,0 +1,58 @@
+/* @font-face {
+    font-family: magneto;
+    src: url(magneto-bold.ttf);
+} */
+
+/* Cabeçalho */
+.cabecalho{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.imgCabecalho{
+    display: inline-block;
+    width: 30%;
+    margin-top: 10px;
+}
+
+header{
+    height: 60px;
+    background-color: red;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+nav{
+    float: right;
+}
+
+nav li{
+    display: inline-block;
+}
+
+nav li a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: inline-block;
+    font-size: 30px;
+}
+
+nav li a:hover{
+    background-color:  rgb(139, 22, 22);
+}
+
+.dropdown-menu{
+    position: absolute;
+    box-shadow: 0 0 2px black ;
+    display: none;
+    background-color: rgb(204, 26, 26);
+    border-radius: 10px;
+}
+
+.dropdown-menu a{
+    display: block;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
