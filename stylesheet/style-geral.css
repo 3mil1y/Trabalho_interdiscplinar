@@ -3,6 +3,10 @@
     src: url(magneto-bold.ttf);
 } */
 
+main{
+    min-height:450px;
+}
+
 /* Cabeçalho */
 .cabecalho{
     width: 940px;
@@ -55,4 +59,25 @@ nav li a:hover{
 
 .dropdown:hover .dropdown-menu{
     display: block;
+}
+
+/* Rodapé */
+
+footer{
+    background-color: red;
+    color:white;
+    height: 100px;
+    margin-top: 25px;
+}
+
+.rodape{
+    position: relative;
+    width: 0 auto;
+    margin: 10px 50px 20px;
+    text-align: center;
+    top: 20px;
+}
+
+.texto-copyright{
+    text-align: center;
 }

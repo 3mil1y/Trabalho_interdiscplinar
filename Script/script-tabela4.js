@@ -57,7 +57,6 @@ function gerarTabela() {
             linhaCorpo.appendChild(celulaEquipe);//Anexa a linha do corpo
         }else{
             const celula = document.createElement('td');
-            celula.textContent = " ";
             linhaCorpo.appendChild(celula);//Anexa a linha do corpo
         }
 

@@ -11,21 +11,5 @@ body{
     font-family: 'Abel', sans-serif;
 }
 
-footer{
-    background-color: red;
-    color:white;
-    height: 100px;
-}
 
-.titulo-copyright{
-    position: relative;
-    width: 0 auto;
-    margin: 10px 50px 20px;
-    text-align: center;
-    top: 20px;
-}
-
-.texto-copyright{
-    text-align: center;
-}
 

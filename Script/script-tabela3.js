@@ -1,10 +1,13 @@
 const outTabelaPontuacao = document.getElementById("outTabelaPontuacao");
 const sltPiloto = document.getElementById("sltPiloto");
+const outImagem = document.getElementById("outImagem");
 
 sltPiloto.addEventListener("change", gerarTabela)
 
 function gerarTabela() {
     //Nesse código não será necessária verificação, visto que as tabelas são geradas conforme algum elemento é escolhido e é impossível retornar ao primeiro elemento
+
+    let indPesquisa;
 
     //Esvazia o html para que uma nova tabela de pilotos seja inserida
     outTabelaPontuacao.textContent = " ";
@@ -59,7 +62,6 @@ function gerarTabela() {
         } else {
             //Cria a célula vazia do corpo
             const celula = document.createElement('td');
-            celula.textContent = " ";
             linhaCorpo.appendChild(celula);//Anexa a linha do corpo 
         }
 
@@ -83,4 +85,8 @@ function gerarTabela() {
     //Anexa a tabela à div tabelaPilotos do HTML
     outTabelaPontuacao.appendChild(tabela);
 
+    //Anexa a imagem dos pilotos junto da tabela
+    var imagemPiloto = document.createElement('img');
+    imagemPiloto.src = "./imagens/imagens-pilotos/piloto" + indPesquisa + ".png";
+    outImagem.appendChild(imagemPiloto);
 }

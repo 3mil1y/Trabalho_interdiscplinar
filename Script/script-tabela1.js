@@ -1,6 +1,7 @@
 //Refêrencia ao html
 const outTabelaPilotos = document.getElementById("outTabelaPilotos");
 const sltPiloto = document.getElementById("sltPiloto");
+const outImagem = document.getElementById("outImagem");
 
 sltPiloto.addEventListener("change", gerarTabela)
 
@@ -69,5 +70,5 @@ function gerarTabela() {
     //Anexa a imagem dos pilotos junto da tabela
     var imagemPiloto = document.createElement('img');
     imagemPiloto.src = "./imagens/imagens-pilotos/piloto" + indPesquisa + ".png";
-    outTabelaPilotos.appendChild(imagemPiloto);
+    outImagem.appendChild(imagemPiloto);
 }

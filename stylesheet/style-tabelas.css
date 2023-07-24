@@ -1,4 +1,62 @@
 section{
     width: 940px;
+    margin: 20px auto;
+}
+
+h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+/* Formatação do seletor */
+select{
+    margin: 10px 38%;
+    width: 24%;
+    font-size: 20px;
+    padding: 3px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+option{
+    text-align: center;
+}
+
+/* Formatação da tabela e imagens */
+
+table{
     margin: 0 auto;
+}
+
+th, td{
+    width: 130px;
+    height: 35px;
+    padding: 3px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 20px;
+    border: 1px black solid;
+}
+
+th{
+    font-weight: bold;
+}
+
+thead{
+    background-color: grey;
+}
+
+tbody tr:nth-child(2n){
+    background-color: darkgray;
+}
+
+#outImagem img{
+    width: 20%;
+    margin: 0 40%; 
+}
+
+.celulaEscondida{
+    border: 0px;
+    background-color: white;
 }
