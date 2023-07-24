@@ -1,6 +1,7 @@
 //Refêrencia ao html
 const outTabelaEquipes = document.getElementById("outTabelaEquipes");
 const sltEquipe = document.getElementById("sltEquipe");
+const outImagem = document.getElementById("outImagem");
 
 sltEquipe.addEventListener("change", gerarTabela)
 
@@ -8,6 +9,7 @@ function gerarTabela() {
   
     //Esvazia o html para que uma nova tabela de pilotos seja inserida
     outTabelaEquipes.textContent = " ";
+    outImagem.textContent = " ";
  
     //Pesquisa no vetor equipes o indice da equipe selecionado
     var identEquipe = sltEquipe.value;
@@ -80,4 +82,10 @@ function gerarTabela() {
 
     //Anexa a tabela a div tabelaPilotos do html
     outTabelaEquipes.appendChild(tabela);
+
+    //Anexa a imagem das equipes junto da tabela
+    let indFoto = Math.floor(indPesquisa/2);
+    var imagemEquipe = document.createElement('img');
+    imagemEquipe.src = "./imagens/imagens-equipes/equipe" + indFoto + ".png";
+    outImagem.appendChild(imagemEquipe);
 }

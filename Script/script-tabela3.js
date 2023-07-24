@@ -11,6 +11,7 @@ function gerarTabela() {
 
     //Esvazia o html para que uma nova tabela de pilotos seja inserida
     outTabelaPontuacao.textContent = " ";
+    outImagem.textContent = " ";
 
     //Pesquisa no vetor pilotos o indice do piloto selecionado
     var identPiloto = sltPiloto.value;

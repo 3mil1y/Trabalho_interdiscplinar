@@ -9,6 +9,7 @@ function gerarTabela() {
     //Nesse código não será necessária verificação, visto que as tabelas são geradas conforme algum elemento é escolhido e é impossível retornar ao primeiro elemento
 
     outTabelaPilotos.textContent = " "; //Esvazia o html para que uma nova tabela de pilotos seja inserida
+    outImagem.textContent = " ";
  
     //Pesquisa no vetor pilotos  o indice do piloto selecionado
     var identPiloto = sltPiloto.value;
