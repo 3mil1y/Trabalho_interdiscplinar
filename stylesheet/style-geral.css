@@ -2,9 +2,9 @@
     font-family: magneto;
     src: url(magneto-bold.ttf);
 } */
-
-main{
-    min-height:450px;
+body {
+    font-family: 'Abel', sans-serif;
+    background-color: #f6f8f7;
 }
 
 /* Cabeçalho */
@@ -22,7 +22,6 @@ main{
 header{
     height: 60px;
     background-color: red;
-    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 nav{
@@ -59,6 +58,17 @@ nav li a:hover{
 
 .dropdown:hover .dropdown-menu{
     display: block;
+    z-index: 1;
+}
+
+/* Main */
+
+main{
+    min-height: 450px;
+}
+
+.info{
+    top: 10px;
 }
 
 /* Rodapé */
