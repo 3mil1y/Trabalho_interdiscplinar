@@ -44,4 +44,8 @@ strong {
     width: 500px;
 }
 
-
+/* Section do vídeo */
+.video{
+    text-align: center;
+    margin-bottom: 30px;
+}

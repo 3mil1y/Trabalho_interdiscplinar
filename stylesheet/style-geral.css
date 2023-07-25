@@ -3,8 +3,8 @@
     src: url(magneto-bold.ttf);
 } */
 body {
-    font-family: 'Abel', sans-serif;
-    background-color: #f6f8f7;
+    font-family: 'Helvetica','Abel', sans-serif;
+    background-color: #dee0df;
 }
 
 /* Cabeçalho */
@@ -65,10 +65,6 @@ nav li a:hover{
 
 main{
     min-height: 450px;
-}
-
-.info{
-    top: 10px;
 }
 
 /* Rodapé */

@@ -1,18 +1,26 @@
+<!--
+    Trabalho Interdisciplinar
+
+    Nomes: Heitor, Êndrio, Fernanda, Matheus e Schraiber
+    Turma: 1° Período TSI
+    Versão: 1.0
+    Tema: Criação de um sistema usado para registrar e mostrar dados (pontuação e posição) em corridas de automobilismo.
+-->
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="stylesheet" href="stylesheet/reset.css">
     <link rel="stylesheet" href="stylesheet/style-geral.css">
-    <link rel="stylesheet" href="stylesheet/style-tabelas.css">
-    <title>Pontuação das equipes por corrida</title>
+    <link rel="stylesheet" href="stylesheet/style-desenvolvedores.css">
+    <title>Piston Cup</title>
 </head>
 
 <body>
-
     <header>
         <div class="cabecalho">
 
@@ -43,26 +51,44 @@
                 </ul>
             </nav>
         </div>
-</header>
+    </header>
 
     <main>
-        <section>
-          <h1>Tabela de pontuação das equipes por corrida</h1>
-        <select id="sltEquipe">
-            <option value="" disabled selected>Escolha a Equipe</option>
-            <option value="Full Time Sports">Full Time Sports</option>
-            <option value="Cimed Racing">Cimed Racing</option>
-            <option value="Shell V-Power Racing Team">Shell V-Power Racing Team</option>
-            <option value="TMG Racing">TMG Racing</option>
-            <option value="Vogel Motorsport">Vogel Motorsport</option>
-            <option value="Ipiranga Racing">Ipiranga Racing</option>
-            <option value="KTF Sports">KTF Sports</option>
-            <option value="Crown Racing">Crown Racing</option>
-        </select>  
+        <section class="titulo">
+            <h2><strong>DESENVOLVEDORES</strong></h2>
+
+            <h3>Quem somos nós</h3>
         </section>
-        
-        <section id="outTabelaEquipes"></section>
-        <section id="outImagem"></section>
+
+        <section class="dev-info">
+            <img class="imagem-dev" src="Imagens/imagens-desenvolvedores/endrio.jpeg">
+
+            <p class="desc-dev">Êndrio Waiandt</p>
+        </section>
+
+        <section class="dev-info">
+            <img class="imagem-dev" src="Imagens/imagens-desenvolvedores/guilherme.jpeg">
+
+            <p class="desc-dev">Guilherme Schraiber Kuster</p>
+        </section>
+
+        <section class="dev-info">
+            <img class="imagem-dev" src="Imagens/imagens-desenvolvedores/placeholder-face.png">
+
+            <p class="desc-dev">Matheus Veker</p>
+        </section>
+
+        <section class="dev-info">
+            <img class="imagem-dev" src="Imagens/imagens-desenvolvedores/heitor.jpg">
+
+            <p class="desc-dev">Heitor Matias Cogo</p>
+        </section>
+
+        <section class="dev-info">
+            <img class="imagem-dev" src="Imagens/imagens-desenvolvedores/fernanda.jpeg">
+
+            <p class="desc-dev">Fernanda Oliveira</p>
+        </section>
     </main>
 
     <footer>
@@ -71,10 +97,8 @@
             <img src="Imagens/imagens-geral/©.png">
 
             <p class="texto-copyright">Todos os direitos reservados.</p>
-        </div>    
+        </div>
     </footer>
-    <script src="./Script/vetores.js"></script>
-    <script src="./Script/script-tabela4.js"></script>
 </body>
 
 </html>

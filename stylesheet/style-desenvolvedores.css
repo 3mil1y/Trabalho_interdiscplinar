@@ -1,0 +1,51 @@
+/*
+    Trabalho Interdisciplinar
+
+    Nomes: Heitor, Êndrio, Fernanda, Matheus e Schraiber
+    Turma: 1° Período TSI
+    Versão: 2.0
+    Tema: Criação de um sistema usado para registrar e mostrar dados (pontuação e posição) em corridas de automobilismo.
+*/
+
+section{
+    width: 940px;
+    margin: 0 auto;
+}
+
+/* Section do titulo */
+.titulo{
+    margin-top: 50px;
+    display: block;
+    text-align: center;
+}
+
+h2{
+    color:red;
+    font-size: 40px;
+}
+
+h3{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/* Sections dos devs */
+
+.dev-info{
+    height: 150px;
+    background: gray;
+    margin-bottom: 20px;
+}
+
+.imagem-dev{
+    float: left;
+    height: 150px;
+}
+
+.desc-dev{
+    display: inline-block;
+    padding-top: 55px;
+    padding-left: 15px;
+    font-size: 40px;
+    font-weight: bold;
+}
