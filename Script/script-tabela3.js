@@ -1,3 +1,11 @@
+// Trabalho Interdisciplinar
+
+    // Nomes: Heitor, Êndrio, Fernanda, Matheus e Schraiber
+    // Turma: 1° Período TSI
+    // Versão: 1.0
+    // Cria a tabela da pontuação dos pilotos por corrida
+
+//Referencia ao html
 const outTabelaPontuacao = document.getElementById("outTabelaPontuacao");
 const sltPiloto = document.getElementById("sltPiloto");
 const outImagem = document.getElementById("outImagem");

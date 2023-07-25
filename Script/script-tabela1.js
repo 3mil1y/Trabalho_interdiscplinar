@@ -1,3 +1,10 @@
+    // Trabalho Interdisciplinar
+
+    // Nomes: Heitor, Êndrio, Fernanda, Matheus e Schraiber
+    // Turma: 1° Período TSI
+    // Versão: 1.0
+    // Cria a tabela da posição do piloto por corrida
+
 //Refêrencia ao html
 const outTabelaPilotos = document.getElementById("outTabelaPilotos");
 const sltPiloto = document.getElementById("sltPiloto");

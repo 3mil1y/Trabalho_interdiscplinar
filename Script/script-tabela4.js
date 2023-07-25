@@ -1,3 +1,10 @@
+// Trabalho Interdisciplinar
+
+    // Nomes: Heitor, Êndrio, Fernanda, Matheus e Schraiber
+    // Turma: 1° Período TSI
+    // Versão: 1.0
+    // Cria a tabela da pontuação das equipes por corrida
+
 //Refêrencia ao html
 const outTabelaEquipes = document.getElementById("outTabelaEquipes");
 const sltEquipe = document.getElementById("sltEquipe");

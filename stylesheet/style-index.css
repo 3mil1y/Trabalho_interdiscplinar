@@ -4,9 +4,10 @@
     Nomes: Heitor, Êndrio, Fernanda, Matheus e Schraiber
     Turma: 1° Período TSI
     Versão: 2.0
-    Tema: Criação de um sistema usado para registrar e mostrar dados (pontuação e posição) em corridas de automobilismo.
+    Tema: Folha de estilo da home
 */
 
+/* Section Principal */
 .conteudo-apresentacao {
     margin-bottom: 50px;
 }

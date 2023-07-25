@@ -1,3 +1,11 @@
+    // Trabalho Interdisciplinar
+
+    // Nomes: Heitor, Êndrio, Fernanda, Matheus e Schraiber
+    // Turma: 1° Período TSI
+    // Versão: 1.0
+    // Cria a tabela da classificação geral por corrida
+
+//Referencia ao html
 const outTabelaCorrida = document.getElementById("outTabelaCorrida");
 const sltCorrida = document.getElementById("sltCorrida");
 

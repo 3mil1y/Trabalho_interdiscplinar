@@ -1,3 +1,10 @@
+// Trabalho Interdisciplinar
+
+    // Nomes: Heitor, Êndrio, Fernanda, Matheus e Schraiber
+    // Turma: 1° Período TSI
+    // Versão: 1.0
+    // Vetores comuns a todo o javascript
+
 var vetPiloto = ['John Smith', 'Lucas Silva', 'Liam Jones', 'Noah Brown', 'William Davis', 'James Taylor', 'Benjamin Wilson', 'Henry Thomas', 'Daniel Johnson', 'Michael Anderson', 'Alexander Thompson', 'David Garcia', 'Joseph Martin', 'Matthew Rodrigues', 'Andrew Robinson', 'Ryan Martinez'];
 
 var vetEquipe = ["Full Time Sports", "Full Time Sports", "Cimed Racing", "Cimed Racing", "Shell V-Power Racing Team", "Shell V-Power Racing Team", "TMG Racing", "TMG Racing", "Vogel Motorsport", "Vogel Motorsport", "Ipiranga Racing", "Ipiranga Racing", "KTF Sports", "KTF Sports", "Crown Racing", "Crown Racing"];
