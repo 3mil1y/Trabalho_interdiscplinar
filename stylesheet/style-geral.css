@@ -70,19 +70,21 @@ nav li a:hover{
     z-index: 1;
 }
 
-/* Main */
+/* main */
 
 main{
-    min-height: 450px;
+    margin-bottom: 120px;
 }
 
 /* Rodapé */
 
 footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     background-color: red;
     color:white;
     height: 100px;
-    margin-top: 25px;
 }
 
 .rodape{
