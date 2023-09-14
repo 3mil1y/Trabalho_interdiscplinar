@@ -1,6 +1,6 @@
 // Trabalho Interdisciplinar
 
-    // Nomes: Heitor, Êndrio, Fernanda, Matheus e Schraiber
+    // Autoria: Êndrio Waiandt;
     // Turma: 1° Período TSI
     // Versão: 1.0
     // Vetores comuns a todo o javascript

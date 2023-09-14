@@ -1,6 +1,6 @@
     // Trabalho Interdisciplinar
 
-    // Nomes: Heitor, Êndrio, Fernanda, Matheus e Schraiber
+    // Autoria: Êndrio Waiandt;
     // Turma: 1° Período TSI
     // Versão: 1.0
     // Cria a tabela da classificação geral por corrida
@@ -8,6 +8,25 @@
 //Referencia ao html
 const outTabelaCorrida = document.getElementById("outTabelaCorrida");
 const sltCorrida = document.getElementById("sltCorrida");
+
+//Gera o seletor
+
+for(i=0;i<=6;i++){
+
+    if(i==0){
+        var option = document.createElement('option');
+        option.textContent = "Escolha a corrida";
+        option.value = "";   
+        option.selected = true;
+        option.disabled = true; 
+    }else{
+        var option = document.createElement('option');
+        option.textContent = "Corrida" + i;
+        option.value = i;    
+    }
+
+    sltCorrida.appendChild(option);
+}
 
 var vetSelecionado
 

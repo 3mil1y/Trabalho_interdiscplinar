@@ -1,6 +1,6 @@
 // Trabalho Interdisciplinar
 
-    // Nomes: Heitor, Êndrio, Fernanda, Matheus e Schraiber
+    // Autoria: Êndrio Waiandt;
     // Turma: 1° Período TSI
     // Versão: 1.0
     // Cria a tabela da pontuação das equipes por corrida
@@ -9,6 +9,26 @@
 const outTabelaEquipes = document.getElementById("outTabelaEquipes");
 const sltEquipe = document.getElementById("sltEquipe");
 const outImagem = document.getElementById("outImagem");
+
+//Gera o seletor dos pilotos
+
+for(i=0;i<vetEquipe.length;i+=2){
+
+    if(i==0){
+        var option = document.createElement('option');
+        option.textContent = "Escolha a Equipe";
+        option.value = "";   
+        option.selected = true;
+        option.disabled = true; 
+    }else{
+        var option = document.createElement('option');
+        option.textContent = vetEquipe[i-1];
+        option.value = vetEquipe[i-1];    
+    }
+
+    sltEquipe.appendChild(option);
+
+}
 
 sltEquipe.addEventListener("change", gerarTabela)
 
